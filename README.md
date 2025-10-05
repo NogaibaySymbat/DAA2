@@ -55,4 +55,4 @@ Repeats: 5 runs per size by default; 1 run for 100,000 to avoid very long execut
 ----
 Conclusion
 ---
-I implemented Bubble Sort with two simple optimizations, gathered metrics, and validated correctness with tests.The algorithm is fine for small or nearly sorted inputs, but on large random/reversed arrays its Θ(n²) time makes it impractical.
+I implemented Bubble Sort with early-exit and last-swap optimizations, instrumented comparisons/swaps/reads/writes, and benchmarked across random/sorted/revered/nearly_sorted inputs. Results confirm near-linear behavior on sorted/nearly sorted data and Θ(n²) on random/reversed, so it’s suitable for small or nearly sorted arrays
